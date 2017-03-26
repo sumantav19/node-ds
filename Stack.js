@@ -80,4 +80,4 @@ Stack.prototype.printall = function  () {
 
 // testStack();
 
-exports.Stack = Stack;
+module.exports = Stack;

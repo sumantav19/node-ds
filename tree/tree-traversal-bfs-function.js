@@ -13,7 +13,9 @@ tree.root.left.left.left = new tree.Node(6);
 // METHOD 1 (Use function to print a given level)
 
 // Algorithm:
-// There are basically two functions in this method. One is to print all nodes at a given level (printGivenLevel), and other is to print level order traversal of the tree (printLevelorder). printLevelorder makes use of printGivenLevel to print nodes at all levels one by one starting from root.
+// There are basically two functions in this method. One is to print all nodes at
+// a given level (printGivenLevel), and other is to print level order traversal of the tree (printLevelorder).
+// printLevelorder makes use of printGivenLevel to print nodes at all levels one by one starting from root.
 
 // Function to print level order traversal of tree
 // printLevelorder(tree)
@@ -58,7 +60,7 @@ var printGivenLevel = function( root, level ){
 	}
 
 	if( level === 1 ){
-		process.stdout.write( root.getData().toString() );
+		process.stdout.write( root.getData().toString() + " " );
 	}else if( level > 1 ){
 		printGivenLevel( root.left , level-1);
 		printGivenLevel( root.right , level-1);
@@ -66,4 +68,5 @@ var printGivenLevel = function( root, level ){
 }
 
 
-printLevelOrder(tree.root);
+// printLevelOrder(tree.root);
+module.exports = printLevelOrder;
