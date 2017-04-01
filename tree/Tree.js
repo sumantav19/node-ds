@@ -37,7 +37,7 @@
 
 
 const Tree = (function () {
- return function(data) {
+  return function (data) {
     this.Node = function (data) {
       this.data = data;
       this.right = undefined;
@@ -61,7 +61,7 @@ const Tree = (function () {
       return this.left;
     };
   }
-} ());
+}());
 
 
 
