@@ -15,7 +15,7 @@ var quickSort = module.exports = function (arr, low, high) {
 }
 var partition = function (arr, low, high) {
     var pivot = arr[high];
-    var i = low - i;
+    var i = low-1;
     for (var j = low; j < high; j++) {
         if (arr[j] <= pivot) {
             i++;
@@ -23,6 +23,6 @@ var partition = function (arr, low, high) {
         }
     }
     swap(arr, i + 1, high);
-    console.log(arr);
+    //console.log(arr);
     return i + 1;
 }

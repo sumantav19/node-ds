@@ -3,7 +3,8 @@ var selectionSort = module.exports = function selectionSort(arr) {
     if(!arr){
         return;
     }
-    for (var i = 0; i < arr.length; i++) {  // n times
+    for (var i = 0; i < arr.length; 
+        i++) {  // n times
         // Multiple swap can happen on one iteration so for memory optimization can be done;
         // for (var j = i; j < arr.length; j++) {
         //     if (arr[i] > arr[j]) {
