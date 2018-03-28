@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}\\algo\\kadanes-algo.js"
+            "program": "${workspaceRoot}\\sort\\quick-sort.js"
         },
         {
             "type": "node",

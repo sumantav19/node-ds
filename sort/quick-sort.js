@@ -4,7 +4,7 @@ var quickSort = module.exports = function (arr, low, high) {
         return arr;
     }
     low = low || 0;
-    high = high || arr.length - 1;
+    high = typeof high === "undefined" ?  arr.length - 1 : high;
     if (low < high) {
         pi = partition(arr, low, high)
 
@@ -24,5 +24,7 @@ var partition = function (arr, low, high) {
     }
     swap(arr, i + 1, high);
     //console.log(arr);
-    return i + 1;
+    return (i + 1);
 }
+
+

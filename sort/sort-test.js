@@ -94,10 +94,10 @@ describe("Sort", function () {
             expect(quickSort([]).join(",")).equals("");
             done();
         });
-        // failing rehandle of quick sort required
-        // it("should sort the array [10,20,30] and give output 10,20,30 after joining the array", function (done) {
-        //     expect(quickSort([10, 20, 30]).join(",")).equals("10,20,30");
-        //     done();
-        // });
+        
+        it("should sort the array [10,20,30] and give output 10,20,30 after joining the array", function (done) {
+            expect(quickSort([10, 20, 30]).join(",")).equals("10,20,30");
+            done();
+        });
     });
 });
